@@ -45,7 +45,6 @@ input {
 }
 
 button {
-    position        : relative;
     width           : 150px;
     border          : none !important;
     background-color: #0063ccbd !important;
