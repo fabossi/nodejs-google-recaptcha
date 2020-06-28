@@ -1,28 +1,54 @@
 html {
-    height: 100%;
-    width : 100%;
+    display          : flex;
+    justify-content  : center;
+    align-items      : center;
+    flex-direction   : column;
+    height           : 100%;
+    width            : 100%;
+    background-image : url('../contact.png');
+    background-repeat: no-repeat;
+    background-size  : cover;
 }
 
-#container {
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-    flex-direction : column;
-    height         : 100%;
-    width          : 100%;
+*,
+*::after,
+*::before {
+    margin            : 0;
+    padding           : 0;
+    -webkit-box-sizing: inherit;
+    box-sizing        : initial;
+}
+
+body {
+    font-family       : "Lato", sans-serif;
+    font-weight       : 400;
+    line-height       : 1.7;
+    -webkit-box-sizing: inherit;
+    background-color  : transparent;
 }
 
 
 button {
-    position: relative;
-    width   : 150px;
+    position        : relative;
+    width           : 150px;
+    border          : none !important;
+    background-color: #0063ccbd !important;
+    outline         : none !important;
+    transition      : transform .5s !important;
 }
 
-#subscribeform {
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-    flex-direction : column;
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(.97);
+}
+
+.container {
+    position: relative;
+    left    : 85%;
+    top     : 20%;
 }
 
 .none {
@@ -31,4 +57,14 @@ button {
 
 ::placeholder {
     text-align: center;
+}
+
+input {
+    outline            : none !important;
+    /* border          : none !important; */
+    background-color   : transparent !important;
+}
+
+label {
+    color: rgba(255, 255, 255, 0.87) !important;
 }

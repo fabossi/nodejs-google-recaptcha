@@ -52,6 +52,7 @@ app.post('/subscribe', (req, res) => {
 });
 
 app.use(express.static(__dirname + '/styles'));
+app.use(express.static(__dirname + '/images'));
 
 app.listen(4000, () => {
     console.log('server started at 4000');
