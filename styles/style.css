@@ -27,6 +27,22 @@ body {
     background-color  : transparent;
 }
 
+.container {
+    position: relative;
+    left    : 85%;
+    top     : 20%;
+}
+
+label {
+    color: rgba(255, 255, 255, 0.87) !important;
+}
+
+input {
+    outline            : none !important;
+    /* border          : none !important; */
+    background-color   : transparent !important;
+    color              : #89c2ffda !important;
+}
 
 button {
     position        : relative;
@@ -45,26 +61,10 @@ button:active {
     transform: scale(.97);
 }
 
-.container {
-    position: relative;
-    left    : 85%;
-    top     : 20%;
-}
-
 .none {
     visibility: hidden;
 }
 
 ::placeholder {
     text-align: center;
-}
-
-input {
-    outline            : none !important;
-    /* border          : none !important; */
-    background-color   : transparent !important;
-}
-
-label {
-    color: rgba(255, 255, 255, 0.87) !important;
 }

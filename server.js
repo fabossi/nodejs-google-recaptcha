@@ -40,12 +40,12 @@ app.post('/subscribe', (req, res) => {
         // If NOT successfull
 
         if (body.sucess != undefined && !body.sucess) {
-            return res.json({ 'sucess': false, 'msg': 'Failed captcha verification' });
+            return res.json({ 'sucess': false, 'msg': 'Failed Captcha verification' });
         }
 
         // If Succesfull
 
-        return res.json({ 'sucess': true, 'msg': 'Captcha passed ' });
+        return res.json({ 'sucess': true, 'msg': 'Captcha verified successfully' });
 
     })
 
