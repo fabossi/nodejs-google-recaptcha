@@ -6,24 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="../style.css">
     <title>Recaptcha</title>
 </head>
 
-<body>
-    <div class="container">
+<body style="height: 100%; width: 100%;">
+    <div id="container" class="container">
         <h1>Subscribe</h1>
         <form id="subscribeform">
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                    placeholder="Enter email">
+                    placeholder="idk@gmail.com">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                     else.</small>
             </div>
             <div class="form-group">
                 <label for="exampleInputName">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Felipe Fabossi">
+                <input type="email" class="form-control" id="name" aria-describedby="emailHelp"
+                    placeholder="Felipe Fabossi">
+                <small id="emailHelp" class="form-text text-muted none">We'll never share your email with anyone
+                    else.</small>
             </div>
             <div class="form-group">
                 <div class="g-recaptcha" data-sitekey="6LfqZqoZAAAAAH-X46kHHlxz1z7m3vJmfioIWagE"></div>
